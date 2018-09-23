@@ -1,4 +1,4 @@
-*{
+    *{
     box-sizing: border-box;
 }
 
@@ -281,7 +281,7 @@ font-family: 'Raleway', sans-serif;
 .container5 {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 450px;
     border: 4px solid #0078A5;
     border-radius: 15px;
     flex-direction: column;
@@ -295,9 +295,12 @@ font-family: 'Raleway', sans-serif;
 .item5 {
     display: flex;
     height: 20%;
-    align-self: center;
-    margin: 10px 0px;
+    align-items: space-between; 
+    justify-content: center;
+    margin: 25px 0px;
     border: 3px solid #0078A5;
+    color: white;
+    flex-grow: 2;
 }
 
 
@@ -310,8 +313,21 @@ font-family: 'Raleway', sans-serif;
     color: white;
 }
 
+.responsiveNav {
+    display: none;
+    color: white;
+}
+.container0 .responsiveNav {
+    content: "\2630"
+}
+
+/* responsive-design */
 
 
-
+@media screen and (max-width: 1250px) and (min-width:650px){
+    .container0{
+        flex-direction: column;
+    }
+}
 
 
